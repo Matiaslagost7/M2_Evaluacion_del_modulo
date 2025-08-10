@@ -1,0 +1,130 @@
+/*Quitar bordes generados en la pagina*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Estilos header*/
+header .barra1 {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 6px;
+  padding: 0px;
+}
+
+header .barra1 .barra2 {
+  background-color: #1c62eb;
+}
+
+header .barra1 .barra2 a {
+  font-size: larger;
+  color: aliceblue;
+  margin-right: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header .barra1 .barra2 a .logo {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.1cm;
+  width: 40%;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+
+.barra3 {
+  justify-content: flex-end;
+}
+
+/*Contenedor de main*/
+.main1{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+/*Imagen index*/
+.img-fluid {
+  width: 500px;
+  height: 622px;
+  margin-left: 5%;
+}
+
+/*Seccion main*/
+.section1 {
+  width: 600px;
+  height: 622px;
+  align-content: center;
+}
+
+.parrafo1 {
+  text-align: justify;
+}
+
+.section-tarjetas {
+  display: grid;
+  grid-template-areas: "card-phishing card-ransomware card-malware card-ataques_DDoS";
+  grid-template-columns: repeat(4, 340px);
+  grid-template-rows: 200px 300px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+/*Sección tarjetas de amenazas*/
+.section-tarjetas .card {
+  width: 95%;
+  height: 750px;
+  margin: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-tarjetas .card .card-body .card-text {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.accordion1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.accordion1 h1 {
+  font-size: x-large;
+}
+
+.accordion1 h2 {
+  font-size: large;
+}
+
+/*footer*/
+footer {
+  background-color: #3f79f0;
+  height: 25px;
+  width: 98%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  margin-left: 11px;
+  margin-top: 10px;
+}
+
+.footer1 {
+  padding-top: 1px;
+}
+
+.letrafooter1 {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
