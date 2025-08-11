@@ -62,6 +62,7 @@ header .barra1 .barra2 a .logo {
   text-align: justify;
 }
 
+/*Sección tarjetas de amenazas comunes*/
 .section-tarjetas {
   display: grid;
   grid-template-areas: "card-phishing card-ransomware card-malware card-ataques_DDoS";
@@ -113,6 +114,46 @@ text-align: justify;
 
 .accordion1 h2 {
   font-size: large;
+}
+
+/*Contenedor consejos de seguridad*/
+.contenedor-consejosdeseguridad {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.Formulario-de-contacto {
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 26px;
+}
+
+.Formulario-de-contacto form {
+  display: grid;
+  grid-template-columns: repeat(2, 0.4fr);
+  grid-template-rows: repeat(4, 0.4fr);
+}
+
+.Formulario-de-contacto form .boton {
+  background-color: #1c62eb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.Formulario-de-contacto form .boton:hover {
+  background-color: #155abf;
 }
 
 /*footer*/

@@ -47,6 +47,87 @@
     </header>
 
     <main>
+      <div class="container contenedor-consejosdeseguridad">
+        <h1 class="text-center mb-4">Consejos de seguridad</h1>
+        <p class="text-center mb-4">Aquí tienes algunos consejos para mantenerte seguro en línea:</p>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Usa contraseñas fuertes</h5>
+                <p class="card-text">Utiliza contraseñas seguras y complejas para proteger tu información personal.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Actualiza tus software</h5>
+                <p class="card-text">Actualiza tus programas y herramientas para mantenerlos actualizados.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Cambia tus contraseñas periódicamente</h5>
+                <p class="card-text">Cambia tus contraseñas periódicamente para aumentar la seguridad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Evita compartir información personal</h5>
+                <p class="card-text">No comparta información personal con personas desconocidas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="card Formulario-de-contacto">
+          <h1>Formulario de contacto</h1>
+          <p>Escribenos y en breve nos contactaremos contigo</p>
+          <form action="/registro" method="post">
+              <div>
+                  <label for="nombre">Nombres:</label>
+                  <input type="text" id="nombre" name="nombre"/>
+              </div>
+              <div>
+                  <label for="apellidos">Apellidos:</label>
+                  <input type="text" id="apellidos" name="apellidos"/>
+              </div>
+              <div>
+                  <label for="correoelectronico">Correo electrónico:</label>
+                  <input type="email" id="correoelectronico" name="correoelectronico"/>
+              </div>
+              <div>
+                  <label for="motivoContacto">Motivo del contacto:</label>
+                  <select id="motivoContacto" name="motivoContacto">
+                      <option value="Cotización">Cotización</option>
+                      <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+                      <option value="Otros">Otros</option>
+                  </select>
+              </div>
+              <div>
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+              </div>
+              <div>
+                  <label for="adjuntarArchivo">Adjuntar archivo:</label>
+                  <input type="file" id="adjuntarArchivo" name="adjuntarArchivo"/>
+              </div>
+              <div>
+                  <input class ="boton mt-3" type="submit" value="Enviar"/>
+              </div>
+          </form>
+      </section>
+
     </main>
 
     <footer class="footerf rounded-5">
