@@ -166,7 +166,6 @@ text-align: justify;
   padding: 26px;
 }
 
-
 /*footer*/
 footer {
   background-color: #3f79f0;
@@ -187,4 +186,68 @@ footer {
   text-decoration: none;
   color: aliceblue;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*mobile index*/
+@media screen and (max-width: 642px) {
+
+.main1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1 {
+  max-height: max-content;
+  max-width: 90%;
+  text-align: center;
+}
+
+.imagenmain {
+  max-width: 90%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header .barra1 .barra2 a .logo {
+  margin-left: 10px;
+  width: 1.4cm;
+}
+
+/*Amenzas comunes*/
+.section-tarjetas {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Formulario-de-contacto {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Formulario-de-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;;
+}
+
+#mensaje {
+  max-width: 330px;
+}
+
+#adjuntarArchivo {
+  max-width: 330px;
+}
+
+.contenedor-consejosdeseguridad {
+  margin-top: 5px;
+}
+
+/*footer*/
+.footerf {
+  width: 99%;
+  margin-left: 2px;
+  }
 }
