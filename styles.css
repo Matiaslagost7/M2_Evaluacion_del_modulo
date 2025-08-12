@@ -1,253 +1,358 @@
-/*Quitar bordes generados en la pagina*/
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-/*Estilos header*/
-header .barra1 {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 6px;
-  padding: 0px;
-}
-
-header .barra1 .barra2 {
-  background-color: #1c62eb;
-}
-
-header .barra1 .barra2 a {
-  font-size: larger;
-  color: aliceblue;
-  margin-right: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-header .barra1 .barra2 a .logo {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 1.1cm;
-  width: 40%;
-  margin-top: 0px;
-  margin-left: 80px;
-}
-
-.barra3 {
-  justify-content: flex-end;
-}
-
-/*Contenedor de main*/
-.main1{
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-}
-
-/*Imagen index*/
-.img-fluid {
-  width: 500px;
-  height: 622px;
-  margin-left: 5%;
-}
-
-/*Seccion main*/
-.section1 {
-  width: 600px;
-  height: 622px;
-  align-content: center;
-}
-
-.parrafo1 {
-  text-align: justify;
-}
-
-/*Sección tarjetas de amenazas comunes*/
-.section-tarjetas {
-  display: grid;
-  grid-template-areas: "card-phishing card-ransomware card-malware card-ataques_DDoS";
-  grid-template-columns: repeat(4, 340px);
-  grid-template-rows: 200px 300px;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  margin-top: 350px;
-}
-
-/*Sección tarjetas de amenazas*/
-.section-tarjetas .card {
-  width: 95%;
-  height: 750px;
-  margin: 10px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.section-tarjetas .card .card-body .card-text {
-  font-size: 16px;
-  color: #000000;
-  line-height: 1.5;
-  text-align: justify;
-}
-
-.accordion1 {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-.accordion-header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.accordion-item {
-text-align: justify;
-}
-
-
-.accordion1 h1 {
-  font-size: x-large;
-}
-
-.accordion1 h2 {
-  font-size: large;
-}
-
-/*Contenedor consejos de seguridad*/
-.contenedor-consejosdeseguridad {
-  display: flex;
-  flex-direction: column;
-  margin-top: 80px;
-}
-
-.Formulario-de-contacto {
-  height: 100%;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 26px;
-}
-
-.Formulario-de-contacto form {
-  display: grid;
-  grid-template-columns: repeat(2, 0.4fr);
-  grid-template-rows: repeat(4, 0.4fr);
-}
-
-.Formulario-de-contacto form .boton {
-  background-color: #1c62eb;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.Formulario-de-contacto form .boton:hover {
-  background-color: #155abf;
-}
-
-/*Seccion modal*/
-.modal-content {
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 10px;
-  margin-right: 100px;
-  padding: 26px;
-}
-
-/*footer*/
-footer {
-  background-color: #3f79f0;
-  height: 25px;
-  width: 98%;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  margin-left: 11px;
-  margin-top: 10px;
-}
-
-.footer1 {
-  padding-top: 1px;
-}
-
-.letrafooter1 {
-  text-decoration: none;
-  color: aliceblue;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 /*mobile index*/
 @media screen and (max-width: 642px) {
 
-.main1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  /*Header*/
+  header .barra1 {
+    height: 55px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 6px;
+    padding: 0px;
+  }
 
-.section1 {
-  max-height: max-content;
-  max-width: 90%;
-  text-align: center;
-}
+  header .barra1 .barra2 {
+    background-color: #1c62eb;
+  }
 
-.imagenmain {
-  max-width: 90%;
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-}
+  header .barra1 .barra2 a {
+    font-size: larger;
+    color: aliceblue;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 
-header .barra1 .barra2 a .logo {
-  margin-left: 10px;
-  width: 1.4cm;
-}
+  header .barra1 .barra2 a .logo {
+    margin-left: 10px;
+    width: 1.2cm;
+  }
 
-/*Amenzas comunes*/
-.section-tarjetas {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-}
+  header .barra1 .barra2 .navbar-toggler {
+    margin-right: 10px;
+  }
 
-.Formulario-de-contacto {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.Formulario-de-contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;;
-}
+  .main1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-#mensaje {
-  max-width: 330px;
-}
+  /*index*/
+  .section1 {
+    margin-top: 80px;
+    max-height: max-content;
+    max-width: 90%;
+  }
 
-#adjuntarArchivo {
-  max-width: 330px;
-}
+  .parrafo1 {text-align: justify}
 
-.contenedor-consejosdeseguridad {
-  margin-top: 5px;
-}
+  .imagenmain {
+    max-width: 90%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 
-/*footer*/
-.footerf {
-  width: 99%;
-  margin-left: 2px;
+  /*Amenazas comunes*/
+  .main-Amenazas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-tarjetas {
+    max-width: 90%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .accordion1 {
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+
+  /*Consejos de seguridad*/
+ .main-consejosdeseguridad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-consejosdeseguridad {
+    margin-top: 70px;
+    max-width: 98%;
+  }
+
+  .Formulario-de-contacto {
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+  .Formulario-de-contacto h1 {
+    text-align: center;
+  }
+
+  .Formulario-de-contacto p {
+    text-align: center;
+  }
+
+  .Formulario-de-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;;
+    margin-left: 8px;
+  }
+
+  .Formulario-de-contacto form .boton {
+    background-color: #1c62eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .Formulario-de-contacto form .boton:hover {
+    background-color: #155abf;
+  }
+
+  #mensaje {
+    max-width: 330px;
+  }
+
+  #adjuntarArchivo {
+    max-width: 330px;
+  }
+
+  /*footer*/
+  .footerf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f79f0;
+    width: 99%;
+    margin-left: 2px;
+    }
+
+  .footer1 {
+    padding-top: 1px;
+  }
+
+  .letrafooter1 {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 }
+
+/*Version escritorio*/
+@media screen and (min-width: 768px) {
+  /*Estilos header*/
+  header .barra1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 6px;
+    padding: 0px;
+  }
+
+  header .barra1 .barra2 {
+    background-color: #1c62eb;
+  }
+
+  header .barra1 .barra2 a {
+    font-size: larger;
+    color: aliceblue;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  header .barra1 .barra2 a .logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1.1cm;
+    width: 40%;
+    margin-top: 0px;
+    margin-left: 80px;
+  }
+
+  .barra3 {
+    justify-content: flex-end;
+  }
+
+  /*Contenedor de main*/
+  
+  .main1{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+
+  /*Imagen index*/
+  .img-fluid {
+    width: 500px;
+    height: 622px;
+    margin-left: 5%;
+  }
+
+  /*Seccion main*/
+  .section1 {
+    width: 600px;
+    height: 622px;
+    align-content: center;
+  }
+
+  .parrafo1 {
+    text-align: justify;
+  }
+
+  /*Seccion amenazas comunes*/
+  .main-Amenazas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Sección tarjetas de amenazas comunes*/
+  .section-tarjetas {
+    display: grid;
+    grid-template-areas: "card-phishing card-ransomware card-malware card-ataques_DDoS";
+    grid-template-columns: repeat(4, 340px);
+    grid-template-rows: 200px 300px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+  }
+
+  /*Sección tarjetas de amenazas*/
+  .section-tarjetas .card {
+    width: 95%;
+    height: 750px;
+    margin: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .section-tarjetas .card .card-body .card-text {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .accordion1 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .accordion-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .accordion-item {
+  text-align: justify;
+  }
+
+
+  .accordion1 h1 {
+    font-size: x-large;
+  }
+
+  .accordion1 h2 {
+    font-size: large;
+  }
+
+  /*Consejos de seguridad*/
+  /*Contenedor consejos de seguridad*/
+  .contenedor-consejosdeseguridad {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .Formulario-de-contacto {
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 26px;
+  }
+
+  .Formulario-de-contacto form {
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
+    grid-template-rows: repeat(4, 0.4fr);
+  }
+
+  .Formulario-de-contacto form .boton {
+    background-color: #1c62eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .Formulario-de-contacto form .boton:hover {
+    background-color: #155abf;
+  }
+
+  /*Seccion modal*/
+  .modal-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    margin-right: 100px;
+    padding: 26px;
+  }
+
+  /*footer*/
+  footer {
+    background-color: #3f79f0;
+    height: 25px;
+    width: 98%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin-left: 11px;
+    margin-top: 10px;
+  }
+
+  .footer1 {
+    padding-top: 1px;
+  }
+
+  .letrafooter1 {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+}
+
