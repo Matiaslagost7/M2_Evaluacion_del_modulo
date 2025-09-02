@@ -1,358 +1,539 @@
-/*mobile index*/
-@media screen and (max-width: 642px) {
+/* Importar fuente moderna */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-  /*Header*/
-  header .barra1 {
-    height: 55px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 6px;
-    padding: 0px;
-  }
-
-  header .barra1 .barra2 {
-    background-color: #1c62eb;
-  }
-
-  header .barra1 .barra2 a {
-    font-size: larger;
-    color: aliceblue;
-    margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  header .barra1 .barra2 a .logo {
-    margin-left: 10px;
-    width: 1.2cm;
-  }
-
-  header .barra1 .barra2 .navbar-toggler {
-    margin-right: 10px;
-  }
-
-  .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /*index*/
-  .section1 {
-    margin-top: 80px;
-    max-height: max-content;
-    max-width: 90%;
-  }
-
-  .parrafo1 {text-align: justify}
-
-  .imagenmain {
-    max-width: 90%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  /*Amenazas comunes*/
-  .main-Amenazas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-tarjetas {
-    max-width: 90%;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .accordion1 {
-    max-width: 90%;
-    margin-bottom: 10px;
-  }
-
-  /*Consejos de seguridad*/
- .main-consejosdeseguridad{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contenedor-consejosdeseguridad {
-    margin-top: 70px;
-    max-width: 98%;
-  }
-
-  .Formulario-de-contacto {
-    height: 100%;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 14px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
-  }
-
-  .Formulario-de-contacto h1 {
-    text-align: center;
-  }
-
-  .Formulario-de-contacto p {
-    text-align: center;
-  }
-
-  .Formulario-de-contacto form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;;
-    margin-left: 8px;
-  }
-
-  .Formulario-de-contacto form .boton {
-    background-color: #1c62eb;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-
-  .Formulario-de-contacto form .boton:hover {
-    background-color: #155abf;
-  }
-
-  #mensaje {
-    max-width: 330px;
-  }
-
-  #adjuntarArchivo {
-    max-width: 330px;
-  }
-
-  /*footer*/
-  .footerf {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #3f79f0;
-    width: 99%;
-    margin-left: 2px;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fc;
+      color: #222;
+      margin: 0;
+      padding: 0;
     }
 
-  .footer1 {
-    padding-top: 1px;
+    /* Header */
+    header .barra1 {
+      background-color: #1c62eb;
+      box-shadow: 0 2px 8px rgba(28, 98, 235, 0.4);
+      padding: 10px 20px;
+      border-radius: 0 0 15px 15px;
+      position: fixed;
+      width: 97%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header .barra2 a.navbar-brand {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #e0e7ff;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    header .barra2 a.navbar-brand img.logo {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    header .barra2 a.navbar-brand img.logo:hover {
+      transform: scale(1.1);
+    }
+
+    nav ul.navbar-nav {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul.navbar-nav li a.nav-link {
+      color: #e0e7ff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 1rem;
+    }
+
+    nav ul.navbar-nav li a.nav-link:hover {
+      color: #ffdd57;
+    }
+
+    /*Responsive*/
+    @media (max-width: 600px) {
+      nav ul.navbar-nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul.navbar-nav li {
+        margin-bottom: 10px;
+      }
+      nav ul.navbar-nav li a.nav-link {
+        font-size: 1.2rem;
+      }
+      header .barra2 a.navbar-brand img.logo {
+        width: 40px;
+      }
+      header .barra2 a.navbar-brand {
+        font-size: 1.2rem;
+      }
+      header .barra1 {
+        padding: 8px 15px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 2px 4px rgba(28, 98, 235, 0.4);
+        background-color: #1c62eb;
+      }
+    }
+
+    /* Main */
+    main.main1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(28, 98, 235, 0.3);
+      padding: 40px 20px;
+      max-height: 500px;
+      max-width: 1220px;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: box-shadow 0.3s ease;
+    }
+
+    section.section1 {
+      max-width: 700px;
+      text-align: center;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    h1.titulo1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1c62eb;
+      margin-bottom: 15px;
+      text-shadow: 0 4px 8px rgba(28, 98, 235, 0.2);
+      transition: text-shadow 0.3s ease;
+    }
+
+    p.parrafo1 {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+      text-align: justify;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    /* Imagen principal */
+    div.imagenmain img {
+      display: flex;
+      transition: transform 0.3s ease;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #cfd8dc;
+      box-shadow: 0 4px 16px rgba(28, 98, 235, 0.1);
+      border-radius: 15px;
+      max-height: 500px;
+      max-width: 700px;
+      object-fit: cover;
+    }
+
+    div.imagenmain img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 32px rgba(28, 98, 235, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-color: #1c62eb;
+      transition: border-color 0.3s ease;      
+    }
+
+    /* Footer */
+    footer.footerf {
+      background-color: #1c62eb;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 15px 15px 0 0;
+      margin-top: 40px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 8px rgba(28, 98, 235, 0.4);
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease;
+
+    }
+
+    footer.footerf a.letrafooter1 {
+      color: #ffdd57;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer.footerf a.letrafooter1:hover {
+      color: #fff;
+    }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    main.main1 {
+      flex-direction: column;
+      padding: 20px 10px;
+      max-height: none;
+      height: auto;
+      gap: 20px;
+    }
+    div.imagenmain img {
+      max-width: 100%;
+      max-height: 400px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center;
+    }
+    div.imagenmain {
+      max-width: 100%;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    section.section1 {
+      max-width: 100%;
+      margin-bottom: 20px;
+      padding: 0 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    h1.titulo1 {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center;
+    }
+    p.parrafo1 {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center;
+    }
+    footer.footerf {
+      font-size: 0.8rem;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      flex-direction: column;
+      gap: 4px;
+      text-align: center;
+    }
   }
 
-  .letrafooter1 {
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+/* Consejos de seguridad */
+.main-consejosdeseguridad {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/*Version escritorio*/
-@media screen and (min-width: 768px) {
-  /*Estilos header*/
-  header .barra1 {
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 6px;
-    padding: 0px;
-  }
+.contenedor-consejosdeseguridad {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
 
-  header .barra1 .barra2 {
-    background-color: #1c62eb;
-  }
+.tarjetas-consejos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
 
-  header .barra1 .barra2 a {
-    font-size: larger;
-    color: aliceblue;
-    margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+.card-consejo {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(28,98,235,0.10);
+  padding: 25px 20px;
+  width: 260px;
+  min-height: 150px;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.card-consejo h2 {
+  color: #1c62eb;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.card-consejo p {
+  color: #444;
+  font-size: 1rem;
+  text-align: left;
+}
 
-  header .barra1 .barra2 a .logo {
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 1.1cm;
-    width: 40%;
-    margin-top: 0px;
-    margin-left: 80px;
-  }
+/* Botón principal */
+.test-seguridad {
+  text-align: center;
+}
+.btn-principal {
+  background-color: #1c62eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-principal:hover {
+  background-color: #1551b8;
+}
 
-  .barra3 {
-    justify-content: flex-end;
-  }
+/* Modal personalizado */
+.modal-custom {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background: rgba(44,62,80,0.25);
+}
+.modal-content-custom {
+  background: #fff;
+  margin: 80px auto;
+  padding: 30px 25px 20px 25px;
+  border-radius: 18px;
+  max-width: 420px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(28,98,235,0.18);
+}
+.close-modal {
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  font-size: 2rem;
+  color: #1c62eb;
+  cursor: pointer;
+}
+.modal-title {
+  color: #1c62eb;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-align: center;
+}
 
-  /*Contenedor de main*/
-  
-  .main1{
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-  }
+/* Formulario de contacto */
+.Formulario-de-contacto {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(28,98,235,0.10);
+  padding: 30px 25px 20px 25px;
+  max-width: 500px;
+  width: 100%;
+  margin: 40px auto;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
 
-  /*Imagen index*/
-  .img-fluid {
-    width: 500px;
-    height: 622px;
-    margin-left: 5%;
-  }
+.Formulario-de-contacto h1 {
+  color: #1c62eb;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.Formulario-de-contacto p {
+  color: #444;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 1rem;
+}
+.Formulario-de-contacto form > div {
+  margin-bottom: 13px;
+  width: 95%;
+}
+.Formulario-de-contacto label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #333;
+  font-size: 1rem;
+  text-align: left;
+}
 
-  /*Seccion main*/
-  .section1 {
-    width: 600px;
-    height: 622px;
-    align-content: center;
-  }
+.Formulario-de-contacto input,
+.Formulario-de-contacto select,
+.Formulario-de-contacto textarea {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #f4f7fc;
+  margin-bottom: 2px;
+}
+.Formulario-de-contacto input[type="file"] {
+  padding: 3px 0;
+  background: none;
+}
+.Formulario-de-contacto .btn-principal {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
 
-  .parrafo1 {
-    text-align: justify;
-  }
-
-  /*Seccion amenazas comunes*/
-  .main-Amenazas {
-    display: flex;
+/* Responsive */
+@media (max-width: 900px) {
+  .tarjetas-consejos {
     flex-direction: column;
-  }
-
-  /*Sección tarjetas de amenazas comunes*/
-  .section-tarjetas {
-    display: grid;
-    grid-template-areas: "card-phishing card-ransomware card-malware card-ataques_DDoS";
-    grid-template-columns: repeat(4, 340px);
-    grid-template-rows: 200px 300px;
-    justify-items: center;
     align-items: center;
-    justify-content: center;
-    margin-top: 350px;
   }
-
-  /*Sección tarjetas de amenazas*/
-  .section-tarjetas .card {
-    width: 95%;
-    height: 750px;
-    margin: 10px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-
-  .section-tarjetas .card .card-body .card-text {
-    font-size: 16px;
-    color: #000000;
-    line-height: 1.5;
-    text-align: justify;
-  }
-
-  .accordion1 {
+  .card-consejo {
     width: 90%;
-    margin: 0 auto;
-    margin-top: 20px;
-  }
-
-  .accordion-header {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .accordion-item {
-  text-align: justify;
-  }
-
-
-  .accordion1 h1 {
-    font-size: x-large;
-  }
-
-  .accordion1 h2 {
-    font-size: large;
-  }
-
-  /*Consejos de seguridad*/
-  /*Contenedor consejos de seguridad*/
-  .contenedor-consejosdeseguridad {
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
-  }
-
-  .Formulario-de-contacto {
-    height: 100%;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 26px;
-  }
-
-  .Formulario-de-contacto form {
-    display: grid;
-    grid-template-columns: repeat(2, 0.4fr);
-    grid-template-rows: repeat(4, 0.4fr);
-  }
-
-  .Formulario-de-contacto form .boton {
-    background-color: #1c62eb;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-
-  .Formulario-de-contacto form .boton:hover {
-    background-color: #155abf;
-  }
-
-  /*Seccion modal*/
-  .modal-content {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 10px;
-    margin-right: 100px;
-    padding: 26px;
-  }
-
-  /*footer*/
-  footer {
-    background-color: #3f79f0;
-    height: 25px;
-    width: 98%;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    margin-left: 11px;
-    margin-top: 10px;
-  }
-
-  .footer1 {
-    padding-top: 1px;
-  }
-
-  .letrafooter1 {
-    text-decoration: none;
-    color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 220px;
   }
 }
 
+/* Amenazas comunes */
+.main-amenazas {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo1 {
+  color: #1c62eb;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contenedor-tarjetas-amenazas {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.tarjetas-amenazas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.card-amenaza {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(28,98,235,0.10);
+  padding: 25px 20px;
+  width: 260px;
+  min-height: 180px;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.card-amenaza h2 {
+  color: #1c62eb;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.card-amenaza p {
+  color: #444;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.card-amenaza:hover {
+  transform: scale(1.05);
+}
+
+/* Casos reales */
+.casos-reales-amenazas {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto 40px auto;
+}
+.casos-reales-amenazas .titulo2 {
+  color: #1c62eb;
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+.caso-amenaza {
+  background: #f4f7fc;
+  border-radius: 10px;
+  padding: 18px 18px 12px 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(28,98,235,0.07);
+}
+.caso-amenaza h3 {
+  color: #1551b8;
+  font-size: 1.1rem;
+  margin-bottom: 7px;
+}
+.caso-amenaza p {
+  color: #444;
+  font-size: 1rem;
+}
+.caso-amenaza a {
+  color: #1c62eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .card-amenaza {
+    width: 90%;
+    min-width: 220px;
+  }
+  .casos-reales-amenazas {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .casos-reales-amenazas .titulo2 {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .caso-amenaza h3 {
+    font-size: 1rem;
+  }
+  .caso-amenaza p {
+    font-size: 0.95rem;
+  }
+}

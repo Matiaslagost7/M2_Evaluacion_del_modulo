@@ -1,227 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--Titulo de la pagina-->
-    <title>Consejos de seguridad</title>
-
-    <!--<LINK BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <!--Estilos de la pagina-->  
-    <link rel="stylesheet" href="../styles.css">
-  
-    <meta name="description" content="El Andronis Arcadia y el Kastelli Resort ofrecen un lujo sin igual, con habitaciones y suites de ensueño, vistas impresionantes y servicios de primera">
-    <meta name="keywords" content="hoteles, alquiler, santorini, andronis arcadia, kastelli resort, hoteles premiados">
-  </head>
-
-  <body>
-    <header>
-      <!--Menu de navegacion-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top rounded-5 barra1">
-        <div class="container-fluid rounded-5 barra2">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../imagenes/logo.png" class="logo">
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="barra3 collapse navbar-collapse" id="navbarNav">
-            <ul class=" barra4 navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link"  href="../paginas/Amenazas comunes.html"> Amenazas comunes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> Consejos de seguridad</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="main-consejosdeseguridad">
-      <div class="container contenedor-consejosdeseguridad">
-        <h1 class="text-center mb-4">Consejos de seguridad</h1>
-        <p class="text-center mb-4">Aquí tienes algunos consejos para mantenerte seguro en línea:</p>
-
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Usa contraseñas fuertes</h5>
-                <p class="card-text">Utiliza contraseñas seguras y complejas para proteger tu información personal.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Actualiza tus software</h5>
-                <p class="card-text">Actualiza tus programas y herramientas para mantenerlos actualizados.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Cambia tus contraseñas periódicamente</h5>
-                <p class="card-text">Cambia tus contraseñas periódicamente para aumentar la seguridad.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Evita compartir información personal</h5>
-                <p class="card-text">No comparta información personal con personas desconocidas.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mt-1 mb-4 text-center">
-        <h3>Descubre tu nivel de seguridad aqui</h3>
-        <p>Click en el boton para abrir una breve encuesta</p>
-
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-          Iniciar test de seguridad
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consejos de seguridad</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <meta name="description" content="Consejos y mejores prácticas para protegerte en línea." />
+  <meta name="keywords" content="ciberseguridad, consejos, seguridad, internet, protección" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c62eb;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagenes/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+          Seguridad Web
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+          aria-controls="menuNav" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-
-      <!-- The Modal -->
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Nivel de seguridad</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              <form id="securityForm">
-                <div class="mb-3">
-                  <label for="q1" class="form-label">1. ¿Qué es un phishing?</label>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
-                    <label class="form-check-label" for="q1a">
-                      Un tipo de virus informático.
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
-                    <label class="form-check-label" for="q1b">
-                      Un intento de robar información a través de correos electrónicos fraudulentos.
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
-                    <label class="form-check-label" for="q1c">
-                      Un software para optimizar el rendimiento de la computadora.
-                    </label>
-                  </div>
-                </div>
-
-                <hr>
-
-                <div class="mb-3">
-                  <label for="q2" class="form-label">2. ¿Cuál es una buena práctica para crear una contraseña segura?</label>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
-                    <label class="form-check-label" for="q2a">
-                      Usar tu fecha de nacimiento.
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
-                    <label class="form-check-label" for="q2b">
-                      Usar una combinación de letras, números y símbolos.
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
-                    <label class="form-check-label" for="q2c">
-                      Usar la misma contraseña para todas tus cuentas.
-                    </label>
-                  </div>
-                </div>
-                
-              </form>
-              <div id="feedback" class="mt-3"></div>
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Guardar Cambios</button>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-
-          </div>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./Amenazas comunes.html">Amenazas comunes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Consejos de seguridad</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <section class="card Formulario-de-contacto">
-          <h1>Formulario de contacto</h1>
-          <p>Escribenos y en breve nos contactaremos contigo</p>
-          <form action="/registro" method="post">
-              <div>
-                  <label for="nombre">Nombres:</label>
-                  <input type="text" id="nombre" name="nombre"/>
-              </div>
-              <div>
-                  <label for="apellidos">Apellidos:</label>
-                  <input type="text" id="apellidos" name="apellidos"/>
-              </div>
-              <div>
-                  <label for="correoelectronico">Correo electrónico:</label>
-                  <input type="email" id="correoelectronico" name="correoelectronico"/>
-              </div>
-              <div>
-                  <label for="motivoContacto">Motivo del contacto:</label>
-                  <select id="motivoContacto" name="motivoContacto">
-                      <option value="Cotización">Cotización</option>
-                      <option value="Trabaja con nosotros">Trabaja con nosotros</option>
-                      <option value="Otros">Otros</option>
-                  </select>
-              </div>
-              <div>
-                  <label for="mensaje">Mensaje:</label>
-                  <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
-              </div>
-              <div>
-                  <label for="adjuntarArchivo">Adjuntar archivo:</label>
-                  <input type="file" id="adjuntarArchivo" name="adjuntarArchivo"/>
-              </div>
-              <div>
-                  <button class ="boton mt-3" type="button">Enviar</button>
-              </div>
-          </form>
-      </section>
-
-    </main>
-
-    <footer class="footerf rounded-5">
-      <!--Parrafo-->
-      <div class="footer1 rounded-5">
-        <a class="letrafooter1 rounded-5" href="../index.html"> Seguridad web</a>
+  <main class="main-consejosdeseguridad">
+    <section class="contenedor-consejosdeseguridad">
+      <h1 class="titulo1">Consejos de seguridad</h1>
+      <p class="parrafo1">Aquí tienes algunos consejos para mantenerte seguro en línea:</p>
+      <div class="tarjetas-consejos row">
+        <div class="card-consejo">
+          <h2>Usa contraseñas fuertes</h2>
+          <p>Utiliza contraseñas seguras y complejas para proteger tu información personal.</p>
+        </div>
+        <div class="card-consejo">
+          <h2>Actualiza tus software</h2>
+          <p>Actualiza tus programas y herramientas para mantenerlos actualizados.</p>
+        </div>
+        <div class="card-consejo">
+          <h2>Cambia tus contraseñas periódicamente</h2>
+          <p>Cambia tus contraseñas periódicamente para aumentar la seguridad.</p>
+        </div>
+        <div class="card-consejo">
+          <h2>Evita compartir información personal</h2>
+          <p>No compartas información personal con personas desconocidas.</p>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <!--Link de js-->
-    <script src="/script.js"></script>
+    <section class="test-seguridad">
+      <h3>Descubre tu nivel de seguridad aquí</h3>
+      <p>Haz clic en el botón para abrir una breve encuesta</p>
+      <button type="button" class="btn-principal" id="abrirModal">Iniciar test de seguridad</button>
+    </section>
 
-    <!--LINK BS JAVA-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body> 
+    <!-- Modal personalizado -->
+    <div class="modal-custom" id="myModal">
+      <div class="modal-content-custom">
+        <span class="close-modal" id="cerrarModal">&times;</span>
+        <h4 class="modal-title">Nivel de seguridad</h4>
+        <form id="securityForm">
+          <div class="mb-3">
+            <label for="q1" class="form-label">1. ¿Qué es un phishing?</label>
+            <div>
+              <input type="radio" name="q1" id="q1a" value="a">
+              <label for="q1a">Un tipo de virus informático.</label>
+            </div>
+            <div>
+              <input type="radio" name="q1" id="q1b" value="b">
+              <label for="q1b">Un intento de robar información a través de correos electrónicos fraudulentos.</label>
+            </div>
+            <div>
+              <input type="radio" name="q1" id="q1c" value="c">
+              <label for="q1c">Un software para optimizar el rendimiento de la computadora.</label>
+            </div>
+          </div>
+          <hr>
+          <div class="mb-3">
+            <label for="q2" class="form-label">2. ¿Cuál es una buena práctica para crear una contraseña segura?</label>
+            <div>
+              <input type="radio" name="q2" id="q2a" value="a">
+              <label for="q2a">Usar tu fecha de nacimiento.</label>
+            </div>
+            <div>
+              <input type="radio" name="q2" id="q2b" value="b">
+              <label for="q2b">Usar una combinación de letras, números y símbolos.</label>
+            </div>
+            <div>
+              <input type="radio" name="q2" id="q2c" value="c">
+              <label for="q2c">Usar la misma contraseña para todas tus cuentas.</label>
+            </div>
+          </div>
+          <button type="button" class="btn-principal" id="enviarTest">Enviar</button>
+        </form>
+        <div id="feedback" class="mt-3"></div>
+      </div>
+    </div>
+
+    <section class="card Formulario-de-contacto">
+      <h1>Formulario de contacto</h1>
+      <p>Escríbenos y en breve nos contactaremos contigo</p>
+      <form id="contactForm" autocomplete="off">
+        <div>
+          <label for="nombre">Nombres:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div>
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" required />
+        </div>
+        <div>
+          <label for="correoelectronico">Correo electrónico:</label>
+          <input type="email" id="correoelectronico" name="correoelectronico" required />
+        </div>
+        <div>
+          <label for="motivoContacto">Motivo del contacto:</label>
+          <select id="motivoContacto" name="motivoContacto">
+            <option value="Cotización">Cotización</option>
+            <option value="Trabaja con nosotros">Trabaja con nosotros</option>
+            <option value="Otros">Otros</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+        </div>
+        <div>
+          <label for="adjuntarArchivo">Adjuntar archivo:</label>
+          <input type="file" id="adjuntarArchivo" name="adjuntarArchivo" />
+        </div>
+        <div>
+          <button class="btn-principal mt-3" type="submit">Enviar</button>
+        </div>
+      </form>
+      <div id="contactFeedback"></div>
+    </section>
+  </main>
+
+  <footer class="footerf">
+    <a href="../index.html" class="letrafooter1">Seguridad web</a>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    // Modal test seguridad
+    const modal = document.getElementById('myModal');
+    const abrirModal = document.getElementById('abrirModal');
+    const cerrarModal = document.getElementById('cerrarModal');
+    abrirModal.onclick = () => modal.style.display = 'block';
+    cerrarModal.onclick = () => modal.style.display = 'none';
+    window.onclick = (event) => { if (event.target == modal) modal.style.display = 'none'; };
+
+    // Test de seguridad feedback
+    document.getElementById('enviarTest').onclick = function() {
+      const q1 = document.querySelector('input[name="q1"]:checked');
+      const q2 = document.querySelector('input[name="q2"]:checked');
+      let feedback = '';
+      if (!q1 || !q2) {
+        feedback = '<span style="color:#e74c3c;">Por favor responde todas las preguntas.</span>';
+      } else if (q1.value === 'b' && q2.value === 'b') {
+        feedback = '<span style="color:#27ae60;">¡Excelente! Tienes buenos conocimientos de seguridad.</span>';
+      } else {
+        feedback = '<span style="color:#e67e22;">Revisa los conceptos de seguridad para mejorar tu protección.</span>';
+      }
+      document.getElementById('feedback').innerHTML = feedback;
+    };
+
+    // Validación simple de formulario de contacto
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('contactFeedback').innerHTML = '<span style="color:#27ae60;">¡Mensaje enviado correctamente!</span>';
+      this.reset();
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
