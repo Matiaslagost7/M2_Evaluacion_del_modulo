@@ -446,7 +446,6 @@
   max-width: 1200px;
   width: 100%;
   text-align: center;
-  margin-bottom: 40px;
 }
 .tarjetas-amenazas {
   display: flex;
@@ -483,35 +482,44 @@
 
 /* Casos reales */
 .casos-reales-amenazas {
+  padding: 20px;
   max-width: 900px;
   width: 100%;
-  margin: 0 auto 40px auto;
+  text-align: left;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
 }
 .casos-reales-amenazas .titulo2 {
   color: #1c62eb;
-  font-size: 1.3rem;
-  margin-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 .caso-amenaza {
-  background: #f4f7fc;
-  border-radius: 10px;
-  padding: 18px 18px 12px 18px;
-  margin-bottom: 18px;
-  box-shadow: 0 2px 8px rgba(28,98,235,0.07);
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(28,98,235,0.10);
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
 }
 .caso-amenaza h3 {
-  color: #1551b8;
-  font-size: 1.1rem;
-  margin-bottom: 7px;
+  color: #1c62eb;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 .caso-amenaza p {
   color: #444;
   font-size: 1rem;
+  text-align: justify;
 }
-.caso-amenaza a {
-  color: #1c62eb;
-  text-decoration: underline;
-  font-weight: 500;
+.caso-amenaza:hover {
+  transform: scale(1.02);
 }
 
 /* Responsive */
@@ -520,20 +528,14 @@
     width: 90%;
     min-width: 220px;
   }
-  .casos-reales-amenazas {
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
   .casos-reales-amenazas .titulo2 {
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 0 10px;
-    box-sizing: border-box;
+    font-size: 1.3rem;
   }
   .caso-amenaza h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .caso-amenaza p {
     font-size: 0.95rem;
   }
+
 }
